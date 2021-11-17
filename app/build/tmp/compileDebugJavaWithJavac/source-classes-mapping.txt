@@ -1,0 +1,4 @@
+com/example/aswitch/MainActivity.java
+ com.example.aswitch.MainActivity
+com/example/aswitch/BuildConfig.java
+ com.example.aswitch.BuildConfig
