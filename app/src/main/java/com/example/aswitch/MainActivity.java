@@ -12,10 +12,5 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public class Dolar{
-        public float dolarVal;
-        public Dolar() {
-            //hello git
-        }
-    }
+   
 }
