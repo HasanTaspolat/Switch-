@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     public class Dolar{
         public float dolarVal;
         public Dolar() {
+            //hello git
         }
     }
 }
