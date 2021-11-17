@@ -11,4 +11,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    public class Dolar{
+        public float dolarVal;
+        public Dolar() {
+        }
+    }
 }

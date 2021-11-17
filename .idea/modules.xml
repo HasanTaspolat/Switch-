@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Switch-.iml" filepath="$PROJECT_DIR$/.idea/modules/Switch-.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Switch.iml" filepath="$PROJECT_DIR$/.idea/modules/Switch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Switch.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Switch.app.iml" />
     </modules>
   </component>
 </project>
