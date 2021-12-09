@@ -1839,6 +1839,7 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id Login
 id META
 id NO_DEBUG
 id SHIFT
@@ -1932,8 +1933,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button4
-id button5
+id btnClose
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -1984,6 +1984,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id dialogConstLayout
 id dialog_button
 id dimensions
 id direct
@@ -2005,6 +2006,9 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editTextTextEmailAddress
+id editTextTextEmailAddress2
+id editTextTextPassword
 id edit_query
 id elastic
 id end
@@ -2067,6 +2071,10 @@ id line3
 id linear
 id listMode
 id list_item
+id logintext
+id logintext2
+id logintext3
+id logintext4
 id masked
 id match_constraint
 id match_parent
@@ -2163,6 +2171,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id register
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2390,6 +2399,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog
+layout diaolog_register
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
