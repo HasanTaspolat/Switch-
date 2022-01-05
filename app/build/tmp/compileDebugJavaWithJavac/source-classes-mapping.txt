@@ -1,6 +1,12 @@
+com/example/aswitch/DatabaseHelper.java
+ com.example.aswitch.DatabaseHelper
+com/example/aswitch/UserTable.java
+ com.example.aswitch.UserTable
+com/example/aswitch/User.java
+ com.example.aswitch.User
+com/example/aswitch/BuildConfig.java
+ com.example.aswitch.BuildConfig
 com/example/aswitch/MainActivity.java
  com.example.aswitch.MainActivity
  com.example.aswitch.MainActivity$1
  com.example.aswitch.MainActivity$2
-com/example/aswitch/BuildConfig.java
- com.example.aswitch.BuildConfig

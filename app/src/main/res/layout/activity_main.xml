@@ -38,14 +38,14 @@
         tools:srcCompat="@drawable/logo" />
 
     <Button
-        android:id="@+id/register"
+        android:id="@+id/Register"
         android:layout_width="260dp"
         android:layout_height="55dp"
-
         android:backgroundTint="#850505"
         android:fontFamily="@font/anton"
         android:background="@drawable/button"
         android:text="Sign Up"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -61,6 +61,7 @@
         android:backgroundTint="#850505"
         android:fontFamily="@font/anton"
         android:text="Sign In"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

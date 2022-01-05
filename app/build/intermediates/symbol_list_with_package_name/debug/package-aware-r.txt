@@ -1842,6 +1842,7 @@ id FUNCTION
 id Login
 id META
 id NO_DEBUG
+id Register
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -1934,6 +1935,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnClose
+id btnLogin
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -2171,7 +2173,6 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id register
 id reverseSawtooth
 id right
 id rightToLeft

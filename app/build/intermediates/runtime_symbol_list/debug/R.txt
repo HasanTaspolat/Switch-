@@ -1841,6 +1841,7 @@ int id FUNCTION 0x7f0a0004
 int id Login 0x7f0a01df
 int id META 0x7f0a0005
 int id NO_DEBUG 0x7f0a0006
+int id Register 0x7f0a01e3
 int id SHIFT 0x7f0a0007
 int id SHOW_ALL 0x7f0a0008
 int id SHOW_PATH 0x7f0a0009
@@ -1933,6 +1934,7 @@ int id bounceBoth 0x7f0a005f
 int id bounceEnd 0x7f0a0060
 int id bounceStart 0x7f0a0061
 int id btnClose 0x7f0a0062
+int id btnLogin 0x7f0a01e4
 int id buttonPanel 0x7f0a0065
 int id cache_measures 0x7f0a0066
 int id cancel_button 0x7f0a0067
@@ -2170,7 +2172,6 @@ int id progress_horizontal 0x7f0a014c
 int id radio 0x7f0a014d
 int id ratio 0x7f0a014e
 int id rectangles 0x7f0a014f
-int id register 0x7f0a01e2
 int id reverseSawtooth 0x7f0a0150
 int id right 0x7f0a0151
 int id rightToLeft 0x7f0a0152
