@@ -57,3 +57,7 @@ local.properties
 .idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml
 .idea/misc.xml
 .idea/modules.xml
+.idea/gradle.xml
+.idea/misc.xml
+*.xml
+*.xml
