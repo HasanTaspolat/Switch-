@@ -16,7 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-//Ata Hasan Yavuz
+
 public class MainActivity extends AppCompatActivity {
     DatabaseHelper dbHelper;
     ImageView logo;
