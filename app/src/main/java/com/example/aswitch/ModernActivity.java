@@ -25,7 +25,7 @@ public class ModernActivity extends AppCompatActivity {
         tadapter = new MyRecyclerViewAdapter(this, Commons.datacurrency);
         recyclerCurrency = findViewById(R.id.recyclerMod);
         recyclerCurrency.setAdapter(tadapter);
-
+//a
         LinearLayoutManager layoutManagertra = new LinearLayoutManager(this);
         recyclerCurrency.setLayoutManager(layoutManagertra);
 
