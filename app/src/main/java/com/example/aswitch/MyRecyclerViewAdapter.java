@@ -1,13 +1,14 @@
 package com.example.aswitch;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -18,14 +19,14 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     private ArrayList<Currency> recyclerItemValues;
 
 
-    public MyRecyclerViewAdapter(Context context, ArrayList<Currency> datacrypto ) {
+    public MyRecyclerViewAdapter(@NonNull Context context, @NonNull ArrayList<Currency> datacrypto ) {
         this.context = context;
         this.recyclerItemValues = datacrypto;
     }
 
-
+    @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder( @NonNull ViewGroup parent, int viewType) {
 
 
         View itemView;
@@ -36,12 +37,15 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         //BIND DATA
 
         final Currency cr = recyclerItemValues.get(position);
 
-        String aaa= cr.getName();
+        Log.d("cr.g ++++++++++++et",cr.getName());
+
+        MyViewHolder itemView = (MyViewHolder) holder;
+
         /*if(aaa=="bitcoin")
             holder.icon.setImageResource(R.drawable.bitcoin);
         else if ( aaa =="ethereum")
@@ -49,38 +53,30 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         else if( aaa=="dogecoin")
             holder.icon.setImageResource(R.drawable.doge);*/
 
-
-        holder.tvName.setText(cr.getName()+"\n");
-
-
-        holder.btnDetail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                final String msg =
-                        "\n  Currency Name:  "+cr.getName()
-                        +"\n  Currency Amount:  "+cr.getPrice();
-               // ((..Activity)context).displayDialog(msg);
-            }
-        });
+//Integer.parseInt(cr.getImg()+"\n")
+        itemView.tvName.setText(cr.getName()+"\n");
+        itemView.icon.setImageResource(R.drawable.logo);
+        itemView.value.setText(cr.getPrice()+"\n");
 
     }
 
     @Override
     public int getItemCount() {
-        return recyclerItemValues.size();
+        return  this.recyclerItemValues.size();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder{
 
-        ImageButton btnDetail;
+
         TextView tvName;
         ImageView icon;
+        TextView value;
 
         MyViewHolder(View viewItem){
             super(viewItem);
             tvName = viewItem.findViewById(R.id.moneyName);
             icon = viewItem.findViewById(R.id.moneyImage);
-            namee = tvName.getText().toString();
+            value = viewItem.findViewById(R.id.moneyValue);
         }
     }
 }
