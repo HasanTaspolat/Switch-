@@ -2009,10 +2009,10 @@ id easeInOut
 id easeOut
 id east
 id editTextTextEmailAddress
-id editTextTextEmailAddress2
 id editTextTextPassword
 id edit_query
 id elastic
+id emReg
 id end
 id endToStart
 id enterAlways
@@ -2170,6 +2170,7 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id psReg
 id radio
 id ratio
 id rectangles
@@ -2298,6 +2299,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id usReg
 id useLogo
 id vertical_only
 id view_offset_helper
@@ -2384,6 +2386,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_profile
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

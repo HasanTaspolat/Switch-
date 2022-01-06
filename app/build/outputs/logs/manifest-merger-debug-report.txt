@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\slyhs\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] C:\Users\slyhs\.gradle\caches\transforms-3\81808270a5cc0559f2b9db87cb315b87\transformed\constraintlayout-2.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\slyhs\.gradle\caches\transforms-3\4ecd700c773cf5624732e3577602f1ea\transformed\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
@@ -39,25 +39,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\slyhs\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\slyhs\.gradle\caches\transforms-3\8ca7186ef83368b8549809152ed428ce\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\slyhs\.gradle\caches\transforms-3\485578c608519582fc751ff2f7c88476\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\slyhs\.gradle\caches\transforms-3\18e5cb54f886f7aa7e26ad4e22b3ac23\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml
 		INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml
-		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml
-		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:5:5-24:19
+ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:5:5-28:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\slyhs\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\slyhs\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] C:\Users\slyhs\.gradle\caches\transforms-3\81808270a5cc0559f2b9db87cb315b87\transformed\constraintlayout-2.1.1\AndroidManifest.xml:9:5-20
@@ -80,28 +80,34 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\sl
 		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:11:9-44
-activity#com.example.aswitch.MainActivity
-ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:12:9-20:20
+activity#com.example.aswitch.ProfileActivity
+ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:12:9-14:39
 	android:exported
 		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:14:13-36
 	android:name
-		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:13:13-41
+		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:13:13-44
+activity#com.example.aswitch.MainActivity
+ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:15:9-23:20
+	android:exported
+		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:17:13-36
+	android:name
+		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:16:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:21:27-74
 meta-data#preloaded_fonts
-ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:21:9-23:57
+ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:25:9-27:57
 	android:resource
-		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:23:13-54
+		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:27:13-54
 	android:name
-		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:22:13-43
+		ADDED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:26:13-43
 uses-sdk
 INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml

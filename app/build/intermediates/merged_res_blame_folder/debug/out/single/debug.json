@@ -36,12 +36,12 @@
         "source": "D:\\HasanDfiles\\Switch-\\app\\src\\main\\res\\drawable\\button.xml"
     },
     {
-        "merged": "D:\\HasanDfiles\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "D:\\HasanDfiles\\Switch-\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "D:\\HasanDfiles\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo.png.flat",
         "source": "D:\\HasanDfiles\\Switch-\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "D:\\HasanDfiles\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "D:\\HasanDfiles\\Switch-\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "D:\\HasanDfiles\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\layout_dialog.xml.flat",
@@ -58,6 +58,10 @@
     {
         "merged": "D:\\HasanDfiles\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "D:\\HasanDfiles\\Switch-\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\HasanDfiles\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_profile.xml.flat",
+        "source": "D:\\HasanDfiles\\Switch-\\app\\src\\main\\res\\layout\\activity_profile.xml"
     },
     {
         "merged": "D:\\HasanDfiles\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\xml_fonts.xml.flat",

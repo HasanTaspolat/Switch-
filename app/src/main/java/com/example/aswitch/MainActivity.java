@@ -6,6 +6,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -49,33 +50,54 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayDialog(){
         final TextView tv;
-        EditText email, surname;
+        EditText email, password;
         Button btnlogin;
+        String em,ps;
         Dialog customDialog = new Dialog(this);
         customDialog.setContentView(R.layout.dialog);
+        email = customDialog.findViewById(R.id.editTextTextEmailAddress);
+        password = customDialog.findViewById(R.id.editTextTextPassword);
         btnlogin = customDialog.findViewById(R.id.btnLogin);
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                customDialog.dismiss();
+                for(User a: UserList)
+                {
+                    Log.d("DATABASE OPERATIONS", " " + a.toString());
+                    if(a.getEmail().equals(email.getText().toString()) && a.getPassword().equals(password.getText().toString())){
+                        Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                        startActivity(intent);
+                    }
+                    else{
+
+                    }
+
+                }
             }
         });
         customDialog.show();
     }
 
         public void displayDialogRegister(){
+
         final TextView tv;
-        EditText username, surname;
+        EditText username, password, email;
         Button btnlogin;
-        
         Dialog customDialog = new Dialog(this);
         customDialog.setContentView(R.layout.diaolog_register);
+        email= customDialog.findViewById(R.id.emReg);
+        password= customDialog.findViewById(R.id.psReg);
+        username= customDialog.findViewById(R.id.usReg);
         btnlogin = customDialog.findViewById(R.id.btnClose);
+
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             //   Intent intent = new Intent(MainActivity.this, FindActivity.class);
-               // startActivity(intent);
+                String us = username.getText().toString();
+                String ps = password.getText().toString();
+                String em = email.getText().toString();
+                UserTable.insert(dbHelper, us, ps, em);
+                customDialog.dismiss();
             }
         });
         customDialog.show();

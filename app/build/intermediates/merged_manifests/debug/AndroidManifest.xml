@@ -19,6 +19,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Switch" >
         <activity
+            android:name="com.example.aswitch.ProfileActivity"
+            android:exported="true" />
+        <activity
             android:name="com.example.aswitch.MainActivity"
             android:exported="true" >
             <intent-filter>

@@ -1,5 +1,7 @@
 com/example/aswitch/DatabaseHelper.java
  com.example.aswitch.DatabaseHelper
+com/example/aswitch/ProfileActivity.java
+ com.example.aswitch.ProfileActivity
 com/example/aswitch/UserTable.java
  com.example.aswitch.UserTable
 com/example/aswitch/User.java

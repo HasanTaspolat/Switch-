@@ -80,12 +80,13 @@
         app:layout_constraintVertical_bias="0.228" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/psReg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,12 +94,13 @@
         app:layout_constraintVertical_bias="0.692" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/usReg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,12 +108,13 @@
         app:layout_constraintVertical_bias="0.314" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/emReg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
