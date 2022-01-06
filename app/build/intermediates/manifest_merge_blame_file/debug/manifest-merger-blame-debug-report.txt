@@ -6,58 +6,74 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml
+8-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="31" />
-9-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml
+9-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:5:5-28:19
-12        android:allowBackup="true"
-12-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.5.0] C:\Users\User\.gradle\caches\transforms-3\255d63c0f9f8f5d12ab3191ffb377750\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/Theme.Switch" >
-20-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:11:9-44
-21        <activity
-21-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:12:9-14:39
-22            android:name="com.example.aswitch.ProfileActivity"
-22-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:13:13-44
-23            android:exported="true" />
-23-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:14:13-36
-24        <activity
-24-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:15:9-23:20
-25            android:name="com.example.aswitch.MainActivity"
-25-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:16:13-41
-26            android:exported="true" >
-26-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:17:13-36
-27            <intent-filter>
-27-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:18:13-22:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:19:17-69
-28-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:19:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:21:17-77
-30-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:21:27-74
-31            </intent-filter>
-32        </activity>
-33
-34        <meta-data
-34-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:25:9-27:57
-35            android:name="preloaded_fonts"
-35-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:26:13-43
-36            android:resource="@array/preloaded_fonts" />
-36-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:27:13-54
-37    </application>
-38
-39</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:7:5-36:19
+14        android:allowBackup="true"
+14-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.5.0] C:\Users\ATATA\.gradle\caches\transforms-3\255d63c0f9f8f5d12ab3191ffb377750\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.Switch" >
+22-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:13:9-44
+23        <activity
+23-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:14:9-16:39
+24            android:name="com.example.aswitch.ModernActivity"
+24-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:15:13-43
+25            android:exported="true" />
+25-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:16:13-36
+26        <activity
+26-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:17:9-19:39
+27            android:name="com.example.aswitch.TraditionalActivity"
+27-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:18:13-48
+28            android:exported="true" />
+28-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:19:13-36
+29        <activity
+29-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:20:9-22:39
+30            android:name="com.example.aswitch.ProfileActivity"
+30-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:21:13-44
+31            android:exported="true" />
+31-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:22:13-36
+32        <activity
+32-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:23:9-31:20
+33            android:name="com.example.aswitch.MainActivity"
+33-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:24:13-41
+34            android:exported="true" >
+34-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:25:13-36
+35            <intent-filter>
+35-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:26:13-30:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:27:17-69
+36-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:27:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:29:17-77
+38-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:29:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <meta-data
+42-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:33:9-35:57
+43            android:name="preloaded_fonts"
+43-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:34:13-43
+44            android:resource="@array/preloaded_fonts" />
+44-->C:\Users\ATATA\AndroidStudioProjects\Project\Sw\app\src\main\AndroidManifest.xml:35:13-54
+45    </application>
+46
+47</manifest>
