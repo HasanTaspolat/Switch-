@@ -36,7 +36,6 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         //BIND DATA
 
         final Currency cr = Commons.datacurrency.get(position);
-        Log.d("aaaaaaaaaa"+cr.getPrice(),"aaaaaaaaa"+cr.getPrice());
 
         String aaa= cr.getName();
         /*if(aaa=="bitcoin")

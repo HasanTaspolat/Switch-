@@ -2178,8 +2178,8 @@ id psReg
 id radio
 id ratio
 id rectangles
-id recyclerView
-id recyclerView2
+id recyclerMod
+id recyclerTra
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2489,6 +2489,8 @@ layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw button
+raw menu
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

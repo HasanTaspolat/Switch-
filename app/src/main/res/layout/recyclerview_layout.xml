@@ -38,7 +38,7 @@
         android:id="@+id/btnDetail"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
         android:background="@android:drawable/ic_menu_view"
         android:text=""

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,11 +18,24 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+/*  Starting of the music file for other buttons or parts.
+
+ mPlayer = MediaPlayer.create(getApplicationContext(),R.raw.button);
+             mPlayer.start();
+
+ */
+
 public class MainActivity extends AppCompatActivity {
     DatabaseHelper dbHelper;
     ImageView logo;
     Button register;
     ArrayList<User> UserList;
+
+    MediaPlayer mPlayer;
+    MediaPlayer mPlayer2;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,14 +50,32 @@ public class MainActivity extends AppCompatActivity {
         logo = findViewById(R.id.imageView3) ;
         logo.setImageResource(R.drawable.logo);
 
+
+        mPlayer2 = MediaPlayer.create(this,R.raw.menu);
+        mPlayer2.start();
+
     }
 
 
     public void onClick(View view) {
         if(view.getId() == R.id.Login){
+            mPlayer = MediaPlayer.create(this,R.raw.button);
+            mPlayer.start();
+            
+           /* mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mediaPlayer) {
+
+                }
+            });*/
+
         displayDialog();
         }
         else if(view.getId() == R.id.Register){
+            //soundEffect
+            mPlayer = MediaPlayer.create(this,R.raw.button);
+            mPlayer.start();
+
         displayDialogRegister();
         }
     }
@@ -64,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
                 UserList = UserTable.getAllusers(dbHelper);
                 for(User a: UserList)
                 {
+                    mPlayer = MediaPlayer.create(getApplicationContext(),R.raw.button);
+                    mPlayer.start();
 
                     Log.d("DATABASE OPERATIONS", " " + a.toString());
                     if(a.getEmail().equals(email.getText().toString()) && a.getPassword().equals(password.getText().toString())){
@@ -97,6 +131,8 @@ public class MainActivity extends AppCompatActivity {
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mPlayer = MediaPlayer.create(getApplicationContext(),R.raw.button);
+                mPlayer.start();
                 String us = username.getText().toString();
                 String ps = password.getText().toString();
                 String em = email.getText().toString();
