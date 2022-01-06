@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     DatabaseHelper dbHelper;
     ImageView logo;
-    Button register,btnLogin;
+    Button register;
     ArrayList<User> UserList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,12 +61,16 @@ public class MainActivity extends AppCompatActivity {
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                UserList = UserTable.getAllusers(dbHelper);
                 for(User a: UserList)
                 {
+
                     Log.d("DATABASE OPERATIONS", " " + a.toString());
                     if(a.getEmail().equals(email.getText().toString()) && a.getPassword().equals(password.getText().toString())){
                         Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                         startActivity(intent);
+
+
                     }
                     else{
 
