@@ -34,4 +34,12 @@ public class Commons {
     public static void setDatacrypto(ArrayList<Currency> datacrypto) {
         Commons.datacurrency = datacrypto;
     }
+
+    public static ArrayList<Currency> getData() {
+        return datacurrency;
+    }
+    public static void setData(ArrayList<Currency> data) {
+        Commons.datacurrency = data;
+    }
+
 }

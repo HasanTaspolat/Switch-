@@ -2,50 +2,52 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:id="@+id/constLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/constLayout">
+    android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/imgIcon"
-        android:layout_width="46dp"
-        android:layout_height="39dp"
+        android:id="@+id/moneyImage"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
         android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/moneyName"
+        app:layout_constraintEnd_toStartOf="@+id/moneyName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/moneyName" />
 
 
     <TextView
-        android:id="@+id/tvName"
-        android:layout_width="181dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="8dp"
+        android:id="@+id/moneyName"
+        android:layout_width="102dp"
+        android:layout_height="33dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="20dp"
         android:text=""
         android:textColor="@color/cardview_shadow_start_color"
         android:textSize="15dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/btnDetail"
-        app:layout_constraintHorizontal_bias="0.285"
-        app:layout_constraintStart_toEndOf="@+id/imgIcon"
+        app:layout_constraintEnd_toStartOf="@+id/moneyValue"
+        app:layout_constraintStart_toEndOf="@+id/moneyImage"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/btnDetail"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="40dp"
-        android:background="@android:drawable/ic_menu_view"
+    <TextView
+        android:id="@+id/moneyValue"
+        android:layout_width="71dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="34dp"
         android:text=""
-        android:textColor="#fff"
-        android:textSize="15sp"
+        android:textColor="@color/cardview_shadow_start_color"
+        android:textSize="15dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/moneyName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintStart_toEndOf="@+id/moneyName"
+        app:layout_constraintTop_toTopOf="@+id/moneyName" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

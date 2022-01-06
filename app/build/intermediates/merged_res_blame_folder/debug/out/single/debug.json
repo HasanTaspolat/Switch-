@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\raw_menu.mp3.flat",
         "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\raw\\menu.mp3"
+    },
+    {
+        "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
@@ -32,12 +32,12 @@
         "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\font_anton.xml.flat",
@@ -50,6 +50,10 @@
     {
         "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\drawable_doge.png.flat",
+        "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\drawable\\doge.png"
     },
     {
         "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_profile.xml.flat",
@@ -66,6 +70,10 @@
     {
         "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\drawable_bitcoin.png.flat",
+        "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\drawable\\bitcoin.png"
     },
     {
         "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\xml_fonts.xml.flat",
@@ -106,6 +114,10 @@
     {
         "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\drawable_eth.png.flat",
+        "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\drawable\\eth.png"
     },
     {
         "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\raw_button.mp3.flat",

@@ -1,7 +1,6 @@
 package com.example.aswitch;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,30 +11,35 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.MyViewHolder> {
     String namee;
     Context context;
+    private ArrayList<Currency> recyclerItemValues;
 
-    public MyRecyclerViewAdapter(Context context, List<Currency> datacrypto ) {
+
+    public MyRecyclerViewAdapter(Context context, ArrayList<Currency> datacrypto ) {
         this.context = context;
-        Commons.datacurrency=(ArrayList<Currency>) datacrypto;
-
+        this.recyclerItemValues = datacrypto;
     }
 
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(context).inflate(R.layout.recyclerview_layout, parent, false);
-        return new MyViewHolder(v);
+
+
+        View itemView;
+        LayoutInflater inflator = LayoutInflater.from(parent.getContext());
+        itemView = inflator.inflate(R.layout.recyclerview_layout, parent, false);
+
+        return new MyViewHolder(itemView);
     }
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         //BIND DATA
 
-        final Currency cr = Commons.datacurrency.get(position);
+        final Currency cr = recyclerItemValues.get(position);
 
         String aaa= cr.getName();
         /*if(aaa=="bitcoin")
@@ -63,7 +67,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
     @Override
     public int getItemCount() {
-        return Commons.datacurrency.size();
+        return recyclerItemValues.size();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder{
@@ -74,9 +78,8 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
         MyViewHolder(View viewItem){
             super(viewItem);
-            tvName = viewItem.findViewById(R.id.tvName);
-            icon = viewItem.findViewById(R.id.imgIcon);
-            btnDetail = viewItem.findViewById(R.id.btnDetail);
+            tvName = viewItem.findViewById(R.id.moneyName);
+            icon = viewItem.findViewById(R.id.moneyImage);
             namee = tvName.getText().toString();
         }
     }

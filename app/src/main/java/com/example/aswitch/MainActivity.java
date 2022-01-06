@@ -25,6 +25,7 @@ import java.util.ArrayList;
 
  */
 
+
 public class MainActivity extends AppCompatActivity {
     DatabaseHelper dbHelper;
     ImageView logo;
@@ -61,13 +62,6 @@ public class MainActivity extends AppCompatActivity {
         if(view.getId() == R.id.Login){
             mPlayer = MediaPlayer.create(this,R.raw.button);
             mPlayer.start();
-            
-           /* mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                @Override
-                public void onCompletion(MediaPlayer mediaPlayer) {
-
-                }
-            });*/
 
         displayDialog();
         }
