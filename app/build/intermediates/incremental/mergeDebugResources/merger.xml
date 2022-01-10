@@ -7684,7 +7684,7 @@
     </string-array></file><file path="C:\Users\User\Documents\GitHub\Switch-\app\src\main\res\values\preloaded_fonts.xml" qualifiers=""><array name="preloaded_fonts" translatable="false">
         <item>@font/anton</item>
         <item>@font/skranji</item>
-    </array></file><file path="C:\Users\User\Documents\GitHub\Switch-\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">Switch</string></file><file path="C:\Users\User\Documents\GitHub\Switch-\app\src\main\res\values\themes.xml" qualifiers=""><style name="Theme.Switch" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    </array></file><file path="C:\Users\User\Documents\GitHub\Switch-\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">Switch</string><string name="recy">For More Information!</string></file><file path="C:\Users\User\Documents\GitHub\Switch-\app\src\main\res\values\themes.xml" qualifiers=""><style name="Theme.Switch" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

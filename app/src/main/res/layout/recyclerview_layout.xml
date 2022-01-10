@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="200dp"
     android:orientation="vertical">
 
     <ImageView
@@ -39,15 +39,31 @@
     <TextView
         android:id="@+id/moneyValue"
         android:layout_width="71dp"
-        android:layout_height="41dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="34dp"
+        android:layout_marginBottom="51dp"
         android:text=""
         android:textColor="@color/purple_200"
         android:textSize="15dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/moneyName"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/moneyName"
-        app:layout_constraintTop_toTopOf="@+id/moneyName" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#52FF00"
+        android:text="@string/recy"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moneyValue" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
