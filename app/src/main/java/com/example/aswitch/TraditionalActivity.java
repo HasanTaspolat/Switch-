@@ -1,20 +1,43 @@
 package com.example.aswitch;
 
-import android.app.Dialog;
-import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class TraditionalActivity extends AppCompatActivity {
-    RecyclerView recyclerCurrency;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-    MyRecyclerViewAdapter tadapter;
-    Dialog customDialog;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+
+public class TraditionalActivity extends AppCompatActivity {
+    private RecyclerView recyclerCurrency;
+    private MyRecyclerViewAdapter tadapter;
+    private RecyclerView.LayoutManager mLayoutManager;
+
+    private ArrayList<Currency> mArrayList;
+
+    // JSON related
+    private String jsonStr;
+    private JSONArray currencies;
+    private JSONObject bookJSONObject;
+
+    String key="";
+
+
+    public static final String TAG_CUR = "currencies";
+    public static final String TAG_NAME = "name";
+    public static final String TAG_VALUE = "value";
+    public static final String TAG_IMG = "img";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,19 +47,19 @@ public class TraditionalActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
+        recyclerCurrency = (RecyclerView) findViewById(R.id.recyclerTra);
+        mLayoutManager = new LinearLayoutManager(this);
+        recyclerCurrency.setLayoutManager(mLayoutManager);
 
-        Intent intent;
-        intent = getIntent();
+        //JSON RELATED
 
-        //Commons.datatraditional = (ArrayList<Traditional>) TraditionalTable.getAllProducts(tradbhelper);
+        mArrayList = new ArrayList<Currency>();
 
-        recyclerCurrency = findViewById(R.id.recyclerTra);
-        tadapter = new MyRecyclerViewAdapter(this, CurrencySys.getConcertsWithArtists("Traditional"));
-        recyclerCurrency.setAdapter(tadapter);
+        jsonStr = loadFileFromAssets("traditional.json");
+        Log.d("TAG", "\n" + jsonStr);
 
-        LinearLayoutManager layoutManagertra = new LinearLayoutManager(this);
-        recyclerCurrency.setLayoutManager(layoutManagertra);
-
+        // Call to AsyncTask
+        new GetCurr().execute();
 
 
 
@@ -44,6 +67,115 @@ public class TraditionalActivity extends AppCompatActivity {
 
 
 
+    private class GetCurr extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            // Creating and showing the progress Dialog
+        }
+
+        // Main job should be done here
+        @Override
+        protected Void doInBackground(Void... params) {
+            //Log.d("TAG", "HERE.....");
+
+            if (jsonStr != null) {
+                try {
+                    bookJSONObject = new JSONObject(jsonStr);
+                    // Getting JSON Array
+                    currencies = bookJSONObject.getJSONArray(TAG_CUR);
+
+
+
+                    for (int i = 0; i < currencies.length(); i++) {
+
+                        JSONObject jsonObj = currencies.getJSONObject(i);
+
+                        //Thread.sleep(2000);//This is here only to simulate parsing json takes time so that ProgressBar execution can be displayed better
+
+                        String name = jsonObj.getString(TAG_NAME);
+                        String value = jsonObj.getString(TAG_VALUE);
+                        String imgName = jsonObj.getString(TAG_IMG);
+                        Log.d("name,,",name);
+                        Log.d(",value,",value);
+                        Log.d(",,imgname",imgName);
+
+                        Currency curr = new Currency(name, value, imgName );
+
+                        if(key.isEmpty())
+                            mArrayList.add(curr);
+                        else if(name.toLowerCase().contains(key.toLowerCase()))
+                            mArrayList.add(curr);
+
+                    }
+                } catch (JSONException ee) {
+                    ee.printStackTrace();
+                }
+            }
+
+            return null;
+        }
+
+
+
+        // What do you want to do after doInBackground() finishes
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+            // Dismiss the progress dialog
+
+
+            if (mArrayList != null) {
+                tadapter = new MyRecyclerViewAdapter(TraditionalActivity.this, mArrayList);
+                recyclerCurrency.setAdapter(tadapter);
+            } else
+                Toast.makeText(TraditionalActivity.this, "Not Found", Toast.LENGTH_LONG).show();
+        }
+
+    }
+
+
+    private String loadFileFromRaw(String fileName) {
+        String fileContent = null;
+        try {
+            InputStream is = getResources().openRawResource(
+                    getResources().getIdentifier(fileName,
+                            "raw", getPackageName()));
+            int size = is.available();
+            byte[] buffer = new byte[size];
+
+            is.read(buffer);
+            is.close();
+
+            fileContent = new String(buffer, "UTF-8");
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return fileContent;
+    }
+
+    private String loadFileFromAssets(String fileName) {
+        String fileContent = null;
+        try {
+            InputStream is = getBaseContext().getAssets().open(fileName);
+
+            int size = is.available();
+            byte[] buffer = new byte[size];
+
+            is.read(buffer);
+            is.close();
+
+            fileContent = new String(buffer, "UTF-8");
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return fileContent;
+    }
 
 
 

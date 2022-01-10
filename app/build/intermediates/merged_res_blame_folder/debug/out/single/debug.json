@@ -12,6 +12,10 @@
         "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\raw_currencies.json.flat",
+        "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\raw\\currencies.json"
+    },
+    {
         "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },

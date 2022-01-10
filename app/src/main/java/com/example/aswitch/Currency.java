@@ -1,11 +1,11 @@
 package com.example.aswitch;
 
 public class Currency {
-    String name;
-    String price;
-    int img;
+    private String name;
+    private String price;
+    private String img;
 
-    public Currency(String name, String price, int img) {
+    public Currency(String name, String price, String img) {
         this.name = name;
         this.price = price;
         this.img = img;
@@ -27,11 +27,11 @@ public class Currency {
         this.price = price;
     }
 
-    public int getImg() {
+    public String getImg() {
         return img;
     }
 
-    public void setImg(int img) {
+    public void setImg(String img) {
         this.img = img;
     }
 }

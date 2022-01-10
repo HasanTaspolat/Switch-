@@ -1,0 +1,34 @@
+{
+  "currencies":[
+    {
+      "name":"Dollar",
+      "value":"13,8016",
+      "img":"bitcoin.png"
+    },
+    {
+      "name":"Euro",
+      "value":"15,6476",
+      "img":"bitcoin.png"
+    },
+    {
+      "name":"English Sterling",
+      "value":"18,7627",
+      "img":"bitcoin.png"
+    },
+    {
+      "name":"Gold",
+      "value":"800,0950",
+      "img":"bitcoin.png"
+    },
+    {
+      "name":"Swiss Frank",
+      "value":"14,9780",
+      "img":"bitcoin.png"
+    },
+    {
+      "name":"Japanese Yen",
+      "value":"0,12",
+      "img":"bitcoin.png"
+    }
+  ]
+}

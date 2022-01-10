@@ -1,7 +1,6 @@
 package com.example.aswitch;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,70 +12,125 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.MyViewHolder> {
-    String namee;
-    Context context;
-    private ArrayList<Currency> recyclerItemValues;
+public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.MyRecyclerViewItemHolder> {
+    private Context context;
+    private ArrayList<Currency> mArrayList;
+    // Turkish lira symbol
 
-
-    public MyRecyclerViewAdapter(@NonNull Context context, @NonNull ArrayList<Currency> datacrypto ) {
+    public MyRecyclerViewAdapter(Context context, ArrayList<Currency> mArrayList) {
         this.context = context;
-        this.recyclerItemValues = datacrypto;
+        this.mArrayList = mArrayList;
     }
 
+    // Each object of the ViewHolder will be created here
     @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder( @NonNull ViewGroup parent, int viewType) {
+    public MyRecyclerViewItemHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
+        LayoutInflater mLayoutInflater = LayoutInflater.from(parent.getContext());
+        View itemView = (View) mLayoutInflater.inflate(R.layout.recyclerview_layout, parent, false);
+        MyRecyclerViewItemHolder mViewHolder = new MyRecyclerViewItemHolder(itemView);
 
-        View itemView;
-        LayoutInflater inflator = LayoutInflater.from(parent.getContext());
-        itemView = inflator.inflate(R.layout.recyclerview_layout, parent, false);
-
-        return new MyViewHolder(itemView);
+        return mViewHolder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        //BIND DATA
+    public void onBindViewHolder(@NonNull MyRecyclerViewItemHolder holder, int position) {
+        Currency curr = mArrayList.get(position);
 
-        final Currency cr = recyclerItemValues.get(position);
 
-        Log.d("cr.g ++++++++++++et",cr.getName());
+        holder.tvName.setText(curr.getName());
+        holder.icon.setImageResource(R.drawable.logo);
+        holder.value.setText(curr.getPrice());
 
-        MyViewHolder itemView = (MyViewHolder) holder;
-
-        /*if(aaa=="bitcoin")
-            holder.icon.setImageResource(R.drawable.bitcoin);
-        else if ( aaa =="ethereum")
-            holder.icon.setImageResource(R.drawable.ethereum);
-        else if( aaa=="dogecoin")
-            holder.icon.setImageResource(R.drawable.doge);*/
-
-//Integer.parseInt(cr.getImg()+"\n")
-        itemView.tvName.setText(cr.getName()+"\n");
-        itemView.icon.setImageResource(R.drawable.logo);
-        itemView.value.setText(cr.getPrice()+"\n");
 
     }
 
+    // How many items exist in the list
     @Override
     public int getItemCount() {
-        return  this.recyclerItemValues.size();
+        return mArrayList.size();
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder{
+
+    class MyRecyclerViewItemHolder extends RecyclerView.ViewHolder {
 
 
         TextView tvName;
         ImageView icon;
         TextView value;
 
-        MyViewHolder(View viewItem){
+        MyRecyclerViewItemHolder(View viewItem) {
             super(viewItem);
             tvName = viewItem.findViewById(R.id.moneyName);
             icon = viewItem.findViewById(R.id.moneyImage);
             value = viewItem.findViewById(R.id.moneyValue);
         }
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
