@@ -1,10 +1,15 @@
 package com.example.aswitch;
 
+import android.app.Dialog;
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,10 +25,11 @@ import java.io.InputStream;
 import java.util.ArrayList;
 
 public class TraditionalActivity extends AppCompatActivity {
+    public static Context context;
     private RecyclerView recyclerCurrency;
     private MyRecyclerViewAdapter tadapter;
     private RecyclerView.LayoutManager mLayoutManager;
-
+    private Dialog customDialog;
     private ArrayList<Currency> mArrayList;
 
     // JSON related
@@ -178,6 +184,24 @@ public class TraditionalActivity extends AppCompatActivity {
     }
 
 
+    public void displayDialog(final String msg){
+        final TextView tv;
+        Button btnClose;
 
+        customDialog = new Dialog(this);
+
+        customDialog.setContentView(R.layout.dialogcurr);
+        tv =  customDialog.findViewById(R.id.tvDialogName);
+        btnClose = customDialog.findViewById(R.id.btnClose);
+        tv.setText(msg+"");
+
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                customDialog.dismiss();
+            }
+        });
+        customDialog.show();
+    }
 
 }

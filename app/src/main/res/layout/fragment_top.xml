@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:src="@drawable/logo" />
+
+        <Spinner
+            android:id="@+id/frgTopSpinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#393838"
+            android:entries="@array/cities" />
+
+    </LinearLayout>
+
+</FrameLayout>

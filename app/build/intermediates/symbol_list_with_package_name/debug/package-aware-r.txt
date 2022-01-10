@@ -57,6 +57,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array cities
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
@@ -1808,6 +1809,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable modern_curr
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1834,6 +1836,7 @@ drawable notify_panel_notification_icon_bg
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable trad_curr
 font anton
 font goblin_one
 font skranji
@@ -2009,6 +2012,7 @@ id dragRight
 id dragStart
 id dragUp
 id dropdown_menu
+id dynamicFragmentLayout
 id easeIn
 id easeInOut
 id easeOut
@@ -2035,7 +2039,10 @@ id fixed
 id flip
 id floating
 id forever
+id fragmentTop
 id fragment_container_view_tag
+id frgBottomImg
+id frgTopSpinnerCity
 id frost
 id ghost_view
 id ghost_view_holder
@@ -2058,6 +2065,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id imageView3
 id immediateStop
 id included
@@ -2107,7 +2115,6 @@ id material_value_index
 id message
 id middle
 id mini
-id modernimg
 id moneyImage
 id moneyName
 id moneyValue
@@ -2278,6 +2285,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id textView6
 id textView7
 id textView9
@@ -2298,7 +2306,6 @@ id toggle
 id top
 id topPanel
 id touch_outside
-id tradimg
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -2307,8 +2314,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tvModern
-id tvTraditional
+id tvDialogName
 id unchecked
 id uniform
 id unlabeled
@@ -2420,7 +2426,10 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog
+layout dialogcurr
 layout diaolog_register
+layout fragment_bottom
+layout fragment_top
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

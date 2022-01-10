@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -38,11 +39,22 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     public void onBindViewHolder(@NonNull MyRecyclerViewItemHolder holder, int position) {
         Currency curr = mArrayList.get(position);
 
-
+        Context mycontext = holder.btn.getContext();
         holder.tvName.setText(curr.getName());
         holder.icon.setImageResource(R.drawable.logo);
         holder.value.setText(curr.getPrice());
 
+        holder.btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final String msg =
+                        "\n  Currency Name:  "+curr.getName()
+                                +"\n  Currency Amount:  "+curr.getPrice();
+
+                ((TraditionalActivity)context).displayDialog(msg);
+                //else if(context == ModernActivity.context) ((ModernActivity)context).displayDialog(msg);
+            }
+        });
 
     }
 
@@ -59,12 +71,14 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         TextView tvName;
         ImageView icon;
         TextView value;
+        Button btn;
 
         MyRecyclerViewItemHolder(View viewItem) {
             super(viewItem);
             tvName = viewItem.findViewById(R.id.moneyName);
             icon = viewItem.findViewById(R.id.moneyImage);
             value = viewItem.findViewById(R.id.moneyValue);
+            btn = viewItem.findViewById(R.id.button);
         }
     }
 
