@@ -1,6 +1,7 @@
 package com.example.aswitch;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -38,10 +41,17 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     @Override
     public void onBindViewHolder(@NonNull MyRecyclerViewItemHolder holder, int position) {
         Currency curr = mArrayList.get(position);
+        String imageNameAddress = curr.getImg();
 
         Context mycontext = holder.btn.getContext();
         holder.tvName.setText(curr.getName());
-        holder.icon.setImageResource(R.drawable.logo);
+
+        Picasso.with(context)
+                .load(imageNameAddress)
+                .into(holder.icon);
+
+        Log.d("IMAGE REQUESTED", imageNameAddress);
+
         holder.value.setText(curr.getPrice());
 
         holder.btn.setOnClickListener(new View.OnClickListener() {

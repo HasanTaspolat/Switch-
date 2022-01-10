@@ -98,11 +98,18 @@ public class ModernActivity extends AppCompatActivity {
 
                         JSONObject jsonObj = currencies.getJSONObject(i);
 
+
+
+
+
                         //Thread.sleep(2000);//This is here only to simulate parsing json takes time so that ProgressBar execution can be displayed better
 
                         String name = jsonObj.getString(TAG_NAME);
                         String value = jsonObj.getString(TAG_VALUE);
-                        String imgName = jsonObj.getString(TAG_IMG);
+                        String imgName = "http://www.ctis.bilkent.edu.tr/ctis487/jsonBook/"+jsonObj.getString(TAG_IMG);
+
+                        //String imgName = jsonObj.getString(TAG_IMG); --> normally that should be used, because we do not have any endpoint. 
+
                         Log.d("name,,",name);
                         Log.d(",value,",value);
                         Log.d(",,imgname",imgName);
