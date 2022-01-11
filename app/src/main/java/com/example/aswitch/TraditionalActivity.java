@@ -1,10 +1,8 @@
 package com.example.aswitch;
 
 import android.app.Dialog;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,8 +16,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -57,34 +53,30 @@ public class TraditionalActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
-
-        Log.d("after adapter ", "Broadcast BroadcastReceiver");
-        Log.d("intent started ", "Broadcast BroadcastReceiver");
-        //JSON RELATED
-        Intent intentb = new Intent(this,MyIntentService.class);
-        startService(intentb);
-        Log.d("after adapter ", "Broadcast BroadcastReceiver");
-        Log.d("intent started ", "Broadcast BroadcastReceiver");
-        IntentFilter filter = new IntentFilter();
-        filter.addAction("JSON_PARSE_COMPLETED_ACTION");
-        registerReceiver(mbroadcastreciver, filter);
-
-        recyclerCurrency = findViewById(R.id.recyclerTra);
-        mLayoutManager = new LinearLayoutManager(context);
+        recyclerCurrency = (RecyclerView) findViewById(R.id.recyclerTra);
+        mLayoutManager = new LinearLayoutManager(this);
         recyclerCurrency.setLayoutManager(mLayoutManager);
+
+        Intent intent = new Intent(this, MyIntentService.class);
+        startService(intent);
+        //JSON RELATED
+
+        mArrayList = new ArrayList<Currency>();
+        ArrayList<Currency> items = intent.getParcelableExtra("currenyItems");
+
+
+        jsonStr = loadFileFromAssets("traditional.json");
+        Log.d("TAG", "\n" + jsonStr);
+        if (mArrayList != null) {
+            tadapter = new MyRecyclerViewAdapter(TraditionalActivity.this, items);
+            recyclerCurrency.setAdapter(tadapter);
+        } else
+            Toast.makeText(TraditionalActivity.this, "Not Found", Toast.LENGTH_LONG).show();
     }
         // Call to AsyncTask
        // new GetCurr().execute();
 
-    public void onClick(View v){
 
-
-            Intent intent = new Intent(this, MyIntentService.class);
-            startService(intent);
-
-            Toast.makeText(this, "Without waiting the result of json request", Toast.LENGTH_SHORT).show();
-
-    }
 
 
 /*
@@ -197,17 +189,6 @@ public class TraditionalActivity extends AppCompatActivity {
         }
         return fileContent;
     }
-    private BroadcastReceiver mbroadcastreciver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-
-            //MyRecyclerViewAdapter adapter = new MyRecyclerViewAdapter(MainActivity.this, Commons.recipeList);
-
-            ArrayList<Currency> items = intent.getParcelableArrayListExtra("currenyItems");
-            MyRecyclerViewAdapter adapter = new MyRecyclerViewAdapter(TraditionalActivity.this,items);
-            recyclerCurrency.setAdapter(adapter);
-        }
-    };
 
 
     public void displayDialog(final String msg){

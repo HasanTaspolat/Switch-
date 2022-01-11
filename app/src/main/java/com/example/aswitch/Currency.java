@@ -1,9 +1,6 @@
 package com.example.aswitch;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-
-public class Currency implements Parcelable {
+public class Currency {
     private String name;
     private String price;
     private String img;
@@ -36,15 +33,5 @@ public class Currency implements Parcelable {
 
     public void setImg(String img) {
         this.img = img;
-    }
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel parcel, int i) {
-
     }
 }
