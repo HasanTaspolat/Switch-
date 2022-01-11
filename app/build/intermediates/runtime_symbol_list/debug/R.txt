@@ -2313,6 +2313,7 @@ int id transition_position 0x7f0a01d6
 int id transition_scene_layoutid_cache 0x7f0a01d7
 int id transition_transform 0x7f0a01d8
 int id triangle 0x7f0a01d9
+int id trybtn 0x7f0a01f2
 int id tvDialogName 0x7f0a01da
 int id unchecked 0x7f0a01db
 int id uniform 0x7f0a01dc

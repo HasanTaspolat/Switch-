@@ -1,7 +1,5 @@
 com/example/aswitch/MyIntentService.java
  com.example.aswitch.MyIntentService
- com.example.aswitch.MyIntentService$1
- com.example.aswitch.MyIntentService$2
 com/example/aswitch/BottomFragment.java
  com.example.aswitch.BottomFragment
  com.example.aswitch.BottomFragment$1
@@ -10,16 +8,18 @@ com/example/aswitch/TopFragment.java
  com.example.aswitch.TopFragment
  com.example.aswitch.TopFragment$1
  com.example.aswitch.TopFragment$TopFragmentInterface
-com/example/aswitch/UserTable.java
- com.example.aswitch.UserTable
+com/example/aswitch/ModernActivity.java
+ com.example.aswitch.ModernActivity
+ com.example.aswitch.ModernActivity$1
+ com.example.aswitch.ModernActivity$GetCurr
 com/example/aswitch/User.java
  com.example.aswitch.User
 com/example/aswitch/BuildConfig.java
  com.example.aswitch.BuildConfig
-com/example/aswitch/MainActivity.java
- com.example.aswitch.MainActivity
- com.example.aswitch.MainActivity$1
- com.example.aswitch.MainActivity$2
+com/example/aswitch/TraditionalActivity.java
+ com.example.aswitch.TraditionalActivity
+ com.example.aswitch.TraditionalActivity$1
+ com.example.aswitch.TraditionalActivity$2
 com/example/aswitch/Commons.java
  com.example.aswitch.Commons
 com/example/aswitch/DatabaseHelper.java
@@ -30,14 +30,13 @@ com/example/aswitch/Currency.java
  com.example.aswitch.Currency
 com/example/aswitch/ProfileActivity.java
  com.example.aswitch.ProfileActivity
-com/example/aswitch/ModernActivity.java
- com.example.aswitch.ModernActivity
- com.example.aswitch.ModernActivity$1
- com.example.aswitch.ModernActivity$GetCurr
 com/example/aswitch/MyRecyclerViewAdapter.java
  com.example.aswitch.MyRecyclerViewAdapter
  com.example.aswitch.MyRecyclerViewAdapter$1
  com.example.aswitch.MyRecyclerViewAdapter$MyRecyclerViewItemHolder
-com/example/aswitch/TraditionalActivity.java
- com.example.aswitch.TraditionalActivity
- com.example.aswitch.TraditionalActivity$1
+com/example/aswitch/MainActivity.java
+ com.example.aswitch.MainActivity
+ com.example.aswitch.MainActivity$1
+ com.example.aswitch.MainActivity$2
+com/example/aswitch/UserTable.java
+ com.example.aswitch.UserTable
