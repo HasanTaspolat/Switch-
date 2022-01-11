@@ -1,6 +1,9 @@
 package com.example.aswitch;
 
-public class Currency {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Currency implements Parcelable {
     private String name;
     private String price;
     private String img;
@@ -10,6 +13,24 @@ public class Currency {
         this.price = price;
         this.img = img;
     }
+
+    protected Currency(Parcel in) {
+        name = in.readString();
+        price = in.readString();
+        img = in.readString();
+    }
+
+    public static final Creator<Currency> CREATOR = new Creator<Currency>() {
+        @Override
+        public Currency createFromParcel(Parcel in) {
+            return new Currency(in);
+        }
+
+        @Override
+        public Currency[] newArray(int size) {
+            return new Currency[size];
+        }
+    };
 
     public String getName() {
         return name;
@@ -33,5 +54,17 @@ public class Currency {
 
     public void setImg(String img) {
         this.img = img;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(name);
+        parcel.writeString(price);
+        parcel.writeString(img);
     }
 }

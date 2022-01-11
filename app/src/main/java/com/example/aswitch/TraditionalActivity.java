@@ -1,7 +1,10 @@
 package com.example.aswitch;
 
 import android.app.Dialog;
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -67,10 +70,30 @@ public class TraditionalActivity extends AppCompatActivity {
         // Call to AsyncTask
         new GetCurr().execute();
 
+        IntentFilter filter = new IntentFilter();
+        filter.addAction("JSON_PARSE_COMPLETED_ACTION");
+        registerReceiver(mbroadcastreciver, filter);
 
+        Intent intent = new Intent(this, MyIntentServiceTraditional.class);
+        startService(intent);
+
+        Toast.makeText(this, "Without waiting the result of json request", Toast.LENGTH_SHORT).show();
 
     }
+    private BroadcastReceiver mbroadcastreciver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Log.d("Service", "Broadcast BroadcastReceiver");
+            Toast.makeText(TraditionalActivity.this, intent.getStringExtra("result"),Toast.LENGTH_SHORT).show();
+            Log.d("Service", "Broadcast BroadcastReceiver");
 
+            //MyRecyclerViewAdapter adapter = new MyRecyclerViewAdapter(MainActivity.this, Commons.recipeList);
+
+            ArrayList<Currency> items = intent.getParcelableArrayListExtra("recipeItems");
+            MyRecyclerViewAdapter adapter = new MyRecyclerViewAdapter(TraditionalActivity.this,items);
+            recyclerCurrency.setAdapter(adapter);
+        }
+    };
 
 
     private class GetCurr extends AsyncTask<Void, Void, Void> {
