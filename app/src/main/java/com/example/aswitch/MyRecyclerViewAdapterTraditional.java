@@ -97,6 +97,14 @@ public class MyRecyclerViewAdapterTraditional extends RecyclerView.Adapter<MyRec
             super(viewItem);
             tvName = viewItem.findViewById(R.id.moneyName);
             icon = viewItem.findViewById(R.id.moneyImage);
+
+
+            YoYo.with(Techniques.Wobble)
+                    .duration(700)
+                    .repeat(200)
+                    .playOn(icon);
+
+
             value = viewItem.findViewById(R.id.moneyValue);
             btn = viewItem.findViewById(R.id.button);
         }

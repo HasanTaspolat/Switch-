@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -60,6 +61,8 @@ public class ModernActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         recyclerCurrency = (RecyclerView) findViewById(R.id.recyclerTra);
+
+
         mLayoutManager = new LinearLayoutManager(this);
         recyclerCurrency.setLayoutManager(mLayoutManager);
 
@@ -135,6 +138,8 @@ public class ModernActivity extends AppCompatActivity {
                         Log.d("name,,",name);
                         Log.d(",value,",value);
                         Log.d(",,imgname",imgName);
+
+
 
                         Currency curr = new Currency(name, value, imgName );
 

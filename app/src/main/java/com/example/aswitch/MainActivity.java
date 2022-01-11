@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         dbHelper = new DatabaseHelper(this);
         UserList = UserTable.getAllusers(dbHelper);
         logo = findViewById(R.id.imageView3) ;
-        logo.setImageResource(R.drawable.logo);
+        logo.setImageResource(R.drawable.pnglogo);
 
 
         mPlayer2 = MediaPlayer.create(this,R.raw.menu);

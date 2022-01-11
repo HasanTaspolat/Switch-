@@ -22,10 +22,12 @@ public class MyRecyclerViewAdapterModern extends RecyclerView.Adapter<MyRecycler
     private Context context;
     private ArrayList<Currency> mArrayList;
     // Turkish lira symbol
+    ImageView symbol;
 
     public MyRecyclerViewAdapterModern(Context context, ArrayList<Currency> mArrayList) {
         this.context = context;
         this.mArrayList = mArrayList;
+
     }
 
     // Each object of the ViewHolder will be created here
@@ -45,13 +47,9 @@ public class MyRecyclerViewAdapterModern extends RecyclerView.Adapter<MyRecycler
         Currency curr = mArrayList.get(position);
 
         String imageNameAddress = curr.getImg();
-
-
-
         Picasso.with(context)
                 .load(imageNameAddress)
                 .into(holder.icon);
-
 
         Log.d("IMAGE REQUESTED", imageNameAddress);
 
@@ -69,6 +67,7 @@ public class MyRecyclerViewAdapterModern extends RecyclerView.Adapter<MyRecycler
                 ((ModernActivity)context).displayDialog(msg);
             }
         });
+
 
         YoYo.with(Techniques.SlideInLeft)
                 .duration(700)
@@ -92,10 +91,20 @@ public class MyRecyclerViewAdapterModern extends RecyclerView.Adapter<MyRecycler
         TextView value;
         Button btn;
 
+
+
         MyRecyclerViewItemHolder(View viewItem) {
             super(viewItem);
             tvName = viewItem.findViewById(R.id.moneyName);
             icon = (ImageView) viewItem.findViewById(R.id.moneyImage);
+
+
+
+            YoYo.with(Techniques.Wobble)
+                    .duration(700)
+                    .repeat(200)
+                    .playOn(icon);
+
             value = viewItem.findViewById(R.id.moneyValue);
             btn = viewItem.findViewById(R.id.button);
         }

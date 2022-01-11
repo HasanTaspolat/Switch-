@@ -52,6 +52,10 @@
         "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\drawable_pnglogo.png.flat",
+        "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\drawable\\pnglogo.png"
+    },
+    {
         "merged": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\build\\intermediates\\merged_res\\debug\\font_anton.xml.flat",
         "source": "C:\\Users\\User\\Documents\\GitHub\\Switch-\\app\\src\\main\\res\\font\\anton.xml"
     },
