@@ -16,6 +16,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
+
 import java.util.ArrayList;
 
 /*  Starting of the music file for other buttons or parts.
@@ -54,6 +57,21 @@ public class MainActivity extends AppCompatActivity {
 
         mPlayer2 = MediaPlayer.create(this,R.raw.menu);
         mPlayer2.start();
+
+        YoYo.with(Techniques.RollIn)
+                .duration(700)
+                .repeat(0)
+                .playOn(findViewById(R.id.imageView3));
+
+        YoYo.with(Techniques.SlideInLeft)
+                .duration(1500)
+                .repeat(0)
+                .playOn(findViewById(R.id.textView9));
+
+        YoYo.with(Techniques.Wobble)
+                .duration(700)
+                .repeat(20)
+                .playOn(findViewById(R.id.Login));
 
     }
 

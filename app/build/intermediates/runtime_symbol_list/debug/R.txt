@@ -1832,6 +1832,8 @@ int drawable notification_template_icon_bg 0x7f080091
 int drawable notification_template_icon_low_bg 0x7f080092
 int drawable notification_tile_bg 0x7f080093
 int drawable notify_panel_notification_icon_bg 0x7f080094
+int drawable outline_login_20 0x7f080099
+int drawable outline_login_24 0x7f08009a
 int drawable test_custom_background 0x7f080095
 int drawable tooltip_frame_dark 0x7f080096
 int drawable tooltip_frame_light 0x7f080097
@@ -2531,6 +2533,7 @@ int string abc_searchview_description_voice 0x7f110017
 int string abc_shareactionprovider_share_with 0x7f110018
 int string abc_shareactionprovider_share_with_application 0x7f110019
 int string abc_toolbar_collapse_description 0x7f11001a
+int string android_animations_lib_name 0x7f11006a
 int string app_name 0x7f11001b
 int string appbar_scrolling_view_behavior 0x7f11001c
 int string bottom_sheet_behavior 0x7f11001d

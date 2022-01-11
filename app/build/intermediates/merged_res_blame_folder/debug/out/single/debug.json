@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\ATATA\\AndroidStudioProjects\\Project\\Sw\\app\\build\\intermediates\\merged_res\\debug\\drawable_outline_login_20.xml.flat",
+        "source": "C:\\Users\\ATATA\\AndroidStudioProjects\\Project\\Sw\\app\\src\\main\\res\\drawable\\outline_login_20.xml"
+    },
+    {
         "merged": "C:\\Users\\ATATA\\AndroidStudioProjects\\Project\\Sw\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\ATATA\\AndroidStudioProjects\\Project\\Sw\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "C:\\Users\\ATATA\\AndroidStudioProjects\\Project\\Sw\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_bottom.xml.flat",
         "source": "C:\\Users\\ATATA\\AndroidStudioProjects\\Project\\Sw\\app\\src\\main\\res\\layout\\fragment_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATATA\\AndroidStudioProjects\\Project\\Sw\\app\\build\\intermediates\\merged_res\\debug\\drawable_outline_login_24.xml.flat",
+        "source": "C:\\Users\\ATATA\\AndroidStudioProjects\\Project\\Sw\\app\\src\\main\\res\\drawable\\outline_login_24.xml"
     },
     {
         "merged": "C:\\Users\\ATATA\\AndroidStudioProjects\\Project\\Sw\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
