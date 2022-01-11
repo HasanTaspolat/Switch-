@@ -1,3 +1,26 @@
+com/example/aswitch/UserTable.java
+ com.example.aswitch.UserTable
+com/example/aswitch/MyIntentServiceModern.java
+ com.example.aswitch.MyIntentServiceModern
+ com.example.aswitch.MyIntentServiceModern$1
+ com.example.aswitch.MyIntentServiceModern$2
+com/example/aswitch/DatabaseHelper.java
+ com.example.aswitch.DatabaseHelper
+com/example/aswitch/CurrencySys.java
+ com.example.aswitch.CurrencySys
+com/example/aswitch/Currency.java
+ com.example.aswitch.Currency
+ com.example.aswitch.Currency$1
+com/example/aswitch/MyIntentServiceTraditional.java
+ com.example.aswitch.MyIntentServiceTraditional
+ com.example.aswitch.MyIntentServiceTraditional$1
+ com.example.aswitch.MyIntentServiceTraditional$2
+com/example/aswitch/User.java
+ com.example.aswitch.User
+com/example/aswitch/BuildConfig.java
+ com.example.aswitch.BuildConfig
+com/example/aswitch/Commons.java
+ com.example.aswitch.Commons
 com/example/aswitch/MyRecyclerViewAdapterTraditional.java
  com.example.aswitch.MyRecyclerViewAdapterTraditional
  com.example.aswitch.MyRecyclerViewAdapterTraditional$1
@@ -19,37 +42,14 @@ com/example/aswitch/ModernActivity.java
  com.example.aswitch.ModernActivity$1
  com.example.aswitch.ModernActivity$2
  com.example.aswitch.ModernActivity$GetCurr
-com/example/aswitch/MyIntentServiceTraditional.java
- com.example.aswitch.MyIntentServiceTraditional
- com.example.aswitch.MyIntentServiceTraditional$1
- com.example.aswitch.MyIntentServiceTraditional$2
-com/example/aswitch/User.java
- com.example.aswitch.User
-com/example/aswitch/BuildConfig.java
- com.example.aswitch.BuildConfig
-com/example/aswitch/TraditionalActivity.java
- com.example.aswitch.TraditionalActivity
- com.example.aswitch.TraditionalActivity$1
- com.example.aswitch.TraditionalActivity$2
- com.example.aswitch.TraditionalActivity$GetCurr
-com/example/aswitch/Commons.java
- com.example.aswitch.Commons
-com/example/aswitch/DatabaseHelper.java
- com.example.aswitch.DatabaseHelper
-com/example/aswitch/CurrencySys.java
- com.example.aswitch.CurrencySys
-com/example/aswitch/Currency.java
- com.example.aswitch.Currency
- com.example.aswitch.Currency$1
 com/example/aswitch/ProfileActivity.java
  com.example.aswitch.ProfileActivity
 com/example/aswitch/MainActivity.java
  com.example.aswitch.MainActivity
  com.example.aswitch.MainActivity$1
  com.example.aswitch.MainActivity$2
-com/example/aswitch/MyIntentServiceModern.java
- com.example.aswitch.MyIntentServiceModern
- com.example.aswitch.MyIntentServiceModern$1
- com.example.aswitch.MyIntentServiceModern$2
-com/example/aswitch/UserTable.java
- com.example.aswitch.UserTable
+com/example/aswitch/TraditionalActivity.java
+ com.example.aswitch.TraditionalActivity
+ com.example.aswitch.TraditionalActivity$1
+ com.example.aswitch.TraditionalActivity$2
+ com.example.aswitch.TraditionalActivity$GetCurr

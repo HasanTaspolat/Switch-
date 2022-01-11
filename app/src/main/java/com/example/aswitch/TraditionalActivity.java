@@ -128,7 +128,7 @@ public class TraditionalActivity extends AppCompatActivity {
 
                         String name = jsonObj.getString(TAG_NAME);
                         String value = jsonObj.getString(TAG_VALUE);
-                        String imgName = jsonObj.getString(TAG_IMG);
+                        String imgName = "http://ctis.bilkent.edu.tr/ctis487/imgJsons/"+jsonObj.getString(TAG_IMG);
                         Log.d("name,,",name);
                         Log.d(",value,",value);
                         Log.d(",,imgname",imgName);

@@ -1,7 +1,5 @@
 package com.example.aswitch;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -14,7 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         mPlayer2.start();
 
         YoYo.with(Techniques.RollIn)
-                .duration(700)
+                .duration(1500)
                 .repeat(0)
                 .playOn(findViewById(R.id.imageView3));
 
@@ -69,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 .playOn(findViewById(R.id.textView9));
 
         YoYo.with(Techniques.Wobble)
-                .duration(700)
+                .duration(1500)
                 .repeat(20)
                 .playOn(findViewById(R.id.Login));
 

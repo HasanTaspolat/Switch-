@@ -1,6 +1,7 @@
 package com.example.aswitch;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -42,10 +44,19 @@ public class MyRecyclerViewAdapterModern extends RecyclerView.Adapter<MyRecycler
     public void onBindViewHolder(@NonNull MyRecyclerViewItemHolder holder, int position) {
         Currency curr = mArrayList.get(position);
 
+        String imageNameAddress = curr.getImg();
+
+
+
+        Picasso.with(context)
+                .load(imageNameAddress)
+                .into(holder.icon);
+
+
+        Log.d("IMAGE REQUESTED", imageNameAddress);
+
 
         holder.tvName.setText(curr.getName());
-
-
         holder.value.setText(curr.getPrice());
 
         holder.btn.setOnClickListener(new View.OnClickListener() {
@@ -84,7 +95,7 @@ public class MyRecyclerViewAdapterModern extends RecyclerView.Adapter<MyRecycler
         MyRecyclerViewItemHolder(View viewItem) {
             super(viewItem);
             tvName = viewItem.findViewById(R.id.moneyName);
-            icon = viewItem.findViewById(R.id.moneyImage);
+            icon = (ImageView) viewItem.findViewById(R.id.moneyImage);
             value = viewItem.findViewById(R.id.moneyValue);
             btn = viewItem.findViewById(R.id.button);
         }

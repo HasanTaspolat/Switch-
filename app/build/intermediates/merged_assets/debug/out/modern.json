@@ -8,32 +8,32 @@
     {
       "name":"Ethereum",
       "value":"43,101.65",
-      "img":"bitcoin.png"
+      "img":"eth.png"
     },
     {
       "name":"Doge",
       "value":"2.06",
-      "img":"bitcoin.png"
+      "img":"doge.png"
     },
     {
       "name":"Arivia",
       "value":"0.005027",
-      "img":"bitcoin.png"
+      "img":"arv.png"
     },
     {
       "name":"XRP",
       "value":"10.29",
-      "img":"bitcoin.png"
+      "img":"xrp.png"
     },
     {
       "name":"SHIBA",
       "value":"0.0003846",
-      "img":"bitcoin.png"
+      "img":"shiba.png"
     },
     {
       "name":"LiteCoin",
       "value":"1,796.08",
-      "img":"bitcoin.png"
+      "img":"lite.png"
     }
   ]
 }

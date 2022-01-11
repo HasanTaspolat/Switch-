@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:backgroundTint="#000000"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
     <TextView
@@ -96,9 +95,9 @@
         android:layout_height="150dp"
         android:fontFamily="@font/anton"
         android:gravity="center"
-        android:text="WELCOME TO SWITCH"
+        android:text="SWITCH"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

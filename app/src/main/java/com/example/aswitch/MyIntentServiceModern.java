@@ -47,7 +47,10 @@ public class MyIntentServiceModern extends IntentService {
 
                                 JSONObject jsobj = jsonArr.getJSONObject(i);
                                 String name = jsobj.getString("name");
-                                String img = jsobj.getString("img");
+                                String img = "http://ctis.bilkent.edu.tr/ctis487/imgJsons/"+jsobj.getString("img");
+
+
+
                                 String price = jsobj.getString("price");
 
                                 Currency r = new Currency(name, price,img);
