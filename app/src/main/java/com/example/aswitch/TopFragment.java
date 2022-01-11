@@ -92,6 +92,7 @@ public class TopFragment extends Fragment {
 
             }
         });
+
         Toast.makeText(getActivity(), "Top Fragment loaded",Toast.LENGTH_SHORT).show();
     }
 }

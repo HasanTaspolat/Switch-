@@ -1,18 +1,13 @@
 package com.example.aswitch;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
-import com.squareup.picasso.Picasso;
 
 
 public class ProfileActivity extends AppCompatActivity implements  TopFragment.TopFragmentInterface {
@@ -29,7 +24,7 @@ public class ProfileActivity extends AppCompatActivity implements  TopFragment.T
         getSupportActionBar().hide();
 
 
-        topFragment = (TopFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentTop);
+        topFragment = (TopFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentNavtrad);
         bottomFragment = new BottomFragment();
         Bundle b = new Bundle();
         b.putInt("position",0);

@@ -31,7 +31,6 @@ public class ModernActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager mLayoutManager;
     private Dialog customDialog;
     private ArrayList<Currency> mArrayList;
-
     // JSON related
     private String jsonStr;
     private JSONArray currencies;
@@ -58,7 +57,6 @@ public class ModernActivity extends AppCompatActivity {
         recyclerCurrency.setLayoutManager(mLayoutManager);
 
         //JSON RELATED
-
         mArrayList = new ArrayList<Currency>();
 
         jsonStr = loadFileFromAssets("modern.json");
@@ -92,15 +90,8 @@ public class ModernActivity extends AppCompatActivity {
                     // Getting JSON Array
                     currencies = bookJSONObject.getJSONArray(TAG_CUR);
 
-
-
                     for (int i = 0; i < currencies.length(); i++) {
-
                         JSONObject jsonObj = currencies.getJSONObject(i);
-
-
-
-
 
                         //Thread.sleep(2000);//This is here only to simulate parsing json takes time so that ProgressBar execution can be displayed better
 
