@@ -24,9 +24,9 @@
 
     <TextView
         android:id="@+id/moneyName"
-        android:layout_width="102dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="114dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="20dp"
         android:text=""
         android:textColor="@color/purple_200"
@@ -38,8 +38,8 @@
 
     <TextView
         android:id="@+id/moneyValue"
-        android:layout_width="71dp"
-        android:layout_height="0dp"
+        android:layout_width="94dp"
+        android:layout_height="36dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="51dp"
@@ -54,13 +54,12 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="44dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#52FF00"
+        android:backgroundTint="#FDFDFD"
         android:text="@string/recy"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

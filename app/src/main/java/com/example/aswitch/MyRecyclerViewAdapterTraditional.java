@@ -11,6 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
+
 import java.util.ArrayList;
 
 public class MyRecyclerViewAdapterTraditional extends RecyclerView.Adapter<MyRecyclerViewAdapterTraditional.MyRecyclerViewItemHolder> {
@@ -55,6 +58,11 @@ public class MyRecyclerViewAdapterTraditional extends RecyclerView.Adapter<MyRec
                 ((TraditionalActivity)context).displayDialog(msg);
             }
         });
+
+        YoYo.with(Techniques.SlideInLeft)
+                .duration(700)
+                .repeat(0)
+                .playOn(holder.btn);
 
     }
 

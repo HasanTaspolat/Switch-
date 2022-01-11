@@ -43,13 +43,13 @@ com/example/aswitch/Currency.java
  com.example.aswitch.Currency$1
 com/example/aswitch/ProfileActivity.java
  com.example.aswitch.ProfileActivity
-com/example/aswitch/UserTable.java
- com.example.aswitch.UserTable
-com/example/aswitch/MyIntentServiceModern.java
- com.example.aswitch.MyIntentServiceModern
- com.example.aswitch.MyIntentServiceModern$1
- com.example.aswitch.MyIntentServiceModern$2
 com/example/aswitch/MainActivity.java
  com.example.aswitch.MainActivity
  com.example.aswitch.MainActivity$1
  com.example.aswitch.MainActivity$2
+com/example/aswitch/MyIntentServiceModern.java
+ com.example.aswitch.MyIntentServiceModern
+ com.example.aswitch.MyIntentServiceModern$1
+ com.example.aswitch.MyIntentServiceModern$2
+com/example/aswitch/UserTable.java
+ com.example.aswitch.UserTable

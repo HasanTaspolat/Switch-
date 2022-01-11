@@ -11,6 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
+
 import java.util.ArrayList;
 
 public class MyRecyclerViewAdapterModern extends RecyclerView.Adapter<MyRecyclerViewAdapterModern.MyRecyclerViewItemHolder> {
@@ -56,6 +59,11 @@ public class MyRecyclerViewAdapterModern extends RecyclerView.Adapter<MyRecycler
             }
         });
 
+        YoYo.with(Techniques.SlideInLeft)
+                .duration(700)
+                .repeat(0)
+                .playOn(holder.btn);
+
     }
 
     // How many items exist in the list
@@ -80,6 +88,7 @@ public class MyRecyclerViewAdapterModern extends RecyclerView.Adapter<MyRecycler
             value = viewItem.findViewById(R.id.moneyValue);
             btn = viewItem.findViewById(R.id.button);
         }
+
     }
 
 }

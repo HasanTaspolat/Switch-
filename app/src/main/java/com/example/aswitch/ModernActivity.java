@@ -19,6 +19,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -222,6 +225,12 @@ public class ModernActivity extends AppCompatActivity {
         customDialog.setContentView(R.layout.dialogcurr);
         tv =  customDialog.findViewById(R.id.tvDialogName);
         btnClose = customDialog.findViewById(R.id.btnClose);
+
+        YoYo.with(Techniques.Wobble)
+                .duration(700)
+                .repeat(20)
+                .playOn(btnClose);
+
         tv.setText(msg+"");
 
         btnClose.setOnClickListener(new View.OnClickListener() {

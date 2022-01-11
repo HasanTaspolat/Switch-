@@ -22,7 +22,7 @@
             android:id="@+id/frgTopSpinnerCity"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:background="#393838"
+            android:background="#FFFFFF"
             android:entries="@array/cities" />
 
     </LinearLayout>
