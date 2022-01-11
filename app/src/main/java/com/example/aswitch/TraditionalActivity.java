@@ -2,7 +2,6 @@ package com.example.aswitch;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -32,6 +31,7 @@ public class TraditionalActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager mLayoutManager;
     private Dialog customDialog;
     private ArrayList<Currency> mArrayList;
+
     // JSON related
     private String jsonStr;
     private JSONArray currencies;
@@ -57,29 +57,22 @@ public class TraditionalActivity extends AppCompatActivity {
         mLayoutManager = new LinearLayoutManager(this);
         recyclerCurrency.setLayoutManager(mLayoutManager);
 
-        Intent intent = new Intent(this, MyIntentService.class);
-        startService(intent);
         //JSON RELATED
 
         mArrayList = new ArrayList<Currency>();
-        ArrayList<Currency> items = intent.getParcelableExtra("currenyItems");
-
 
         jsonStr = loadFileFromAssets("traditional.json");
         Log.d("TAG", "\n" + jsonStr);
-        if (mArrayList != null) {
-            tadapter = new MyRecyclerViewAdapter(TraditionalActivity.this, items);
-            recyclerCurrency.setAdapter(tadapter);
-        } else
-            Toast.makeText(TraditionalActivity.this, "Not Found", Toast.LENGTH_LONG).show();
-    }
+
         // Call to AsyncTask
-       // new GetCurr().execute();
+        new GetCurr().execute();
 
 
 
+    }
 
-/*
+
+
     private class GetCurr extends AsyncTask<Void, Void, Void> {
 
         @Override
@@ -147,7 +140,7 @@ public class TraditionalActivity extends AppCompatActivity {
         }
 
     }
-*/
+
 
     private String loadFileFromRaw(String fileName) {
         String fileContent = null;

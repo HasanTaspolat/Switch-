@@ -6,74 +6,74 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml
+8-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="31" />
-9-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml
+9-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:5:5-67
-11-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:7:5-36:19
+13-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:7:5-36:19
 14        android:allowBackup="true"
-14-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:8:9-35
+14-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.5.0] C:\Users\slyhs\.gradle\caches\transforms-3\255d63c0f9f8f5d12ab3191ffb377750\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+15-->[androidx.core:core:1.5.0] C:\Users\User\.gradle\caches\transforms-3\255d63c0f9f8f5d12ab3191ffb377750\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:icon="@drawable/logo"
-17-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:9:9-38
+17-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:9:9-38
 18        android:label="@string/app_name"
-18-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:10:9-41
+18-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:10:9-41
 19        android:roundIcon="@drawable/logo"
-19-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:11:9-43
+19-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:11:9-43
 20        android:supportsRtl="true"
-20-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:12:9-35
+20-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:12:9-35
 21        android:testOnly="true"
 22        android:theme="@style/Theme.Switch" >
-22-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:13:9-44
+22-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:13:9-44
 23        <activity
-23-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:14:9-16:39
+23-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:14:9-16:39
 24            android:name="com.example.aswitch.ModernActivity"
-24-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:15:13-43
+24-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:15:13-43
 25            android:exported="true" />
-25-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:16:13-36
+25-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:16:13-36
 26        <activity
-26-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:17:9-19:39
+26-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:17:9-19:39
 27            android:name="com.example.aswitch.TraditionalActivity"
-27-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:18:13-48
+27-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:18:13-48
 28            android:exported="true" />
-28-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:19:13-36
+28-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:19:13-36
 29        <activity
-29-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:20:9-22:39
+29-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:20:9-22:39
 30            android:name="com.example.aswitch.ProfileActivity"
-30-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:21:13-44
+30-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:21:13-44
 31            android:exported="true" />
-31-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:22:13-36
+31-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:22:13-36
 32        <activity
-32-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:23:9-31:20
+32-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:23:9-31:20
 33            android:name="com.example.aswitch.MainActivity"
-33-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:24:13-41
+33-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:24:13-41
 34            android:exported="true" >
-34-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:25:13-36
+34-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:25:13-36
 35            <intent-filter>
-35-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:26:13-30:29
+35-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:26:13-30:29
 36                <action android:name="android.intent.action.MAIN" />
-36-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:27:17-69
-36-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:27:25-66
+36-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:27:17-69
+36-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:27:25-66
 37
 38                <category android:name="android.intent.category.LAUNCHER" />
-38-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:29:17-77
-38-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:29:27-74
+38-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:29:17-77
+38-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:29:27-74
 39            </intent-filter>
 40        </activity>
 41
 42        <meta-data
-42-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:33:9-35:57
+42-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:33:9-35:57
 43            android:name="preloaded_fonts"
-43-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:34:13-43
+43-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:34:13-43
 44            android:resource="@array/preloaded_fonts" />
-44-->D:\HasanDfiles\Switch-\app\src\main\AndroidManifest.xml:35:13-54
+44-->C:\Users\User\Documents\GitHub\Switch-\app\src\main\AndroidManifest.xml:35:13-54
 45    </application>
 46
 47</manifest>

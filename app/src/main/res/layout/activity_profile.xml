@@ -27,7 +27,7 @@
             app:layout_constraintVertical_bias="0.173" />
 
         <fragment
-            android:id="@+id/fragmentNavtrad"
+            android:id="@+id/fragmentTop"
             android:name="com.example.aswitch.TopFragment"
             android:layout_width="0dp"
             android:layout_height="0dp"
