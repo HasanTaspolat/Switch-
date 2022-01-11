@@ -30,7 +30,7 @@ import java.util.ArrayList;
 public class TraditionalActivity extends AppCompatActivity {
     public static Context context;
     private RecyclerView recyclerCurrency;
-    private MyRecyclerViewAdapter tadapter;
+    private MyRecyclerViewAdapterTraditional tadapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private Dialog customDialog;
     private ArrayList<Currency> mArrayList;
@@ -87,10 +87,10 @@ public class TraditionalActivity extends AppCompatActivity {
             Toast.makeText(TraditionalActivity.this, intent.getStringExtra("result"),Toast.LENGTH_SHORT).show();
             Log.d("Service", "Broadcast BroadcastReceiver");
 
-            //MyRecyclerViewAdapter adapter = new MyRecyclerViewAdapter(MainActivity.this, Commons.recipeList);
+            //MyRecyclerViewAdapterTraditional adapter = new MyRecyclerViewAdapterTraditional(MainActivity.this, Commons.recipeList);
 
             ArrayList<Currency> items = intent.getParcelableArrayListExtra("recipeItems");
-            MyRecyclerViewAdapter adapter = new MyRecyclerViewAdapter(TraditionalActivity.this,items);
+            MyRecyclerViewAdapterTraditional adapter = new MyRecyclerViewAdapterTraditional(TraditionalActivity.this,items);
             recyclerCurrency.setAdapter(adapter);
         }
     };
@@ -156,7 +156,7 @@ public class TraditionalActivity extends AppCompatActivity {
 
 
             if (mArrayList != null) {
-                tadapter = new MyRecyclerViewAdapter(TraditionalActivity.this, mArrayList);
+                tadapter = new MyRecyclerViewAdapterTraditional(TraditionalActivity.this, mArrayList);
                 recyclerCurrency.setAdapter(tadapter);
             } else
                 Toast.makeText(TraditionalActivity.this, "Not Found", Toast.LENGTH_LONG).show();

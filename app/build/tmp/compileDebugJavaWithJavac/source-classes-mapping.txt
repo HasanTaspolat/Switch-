@@ -1,3 +1,11 @@
+com/example/aswitch/MyRecyclerViewAdapterTraditional.java
+ com.example.aswitch.MyRecyclerViewAdapterTraditional
+ com.example.aswitch.MyRecyclerViewAdapterTraditional$1
+ com.example.aswitch.MyRecyclerViewAdapterTraditional$MyRecyclerViewItemHolder
+com/example/aswitch/MyRecyclerViewAdapterModern.java
+ com.example.aswitch.MyRecyclerViewAdapterModern
+ com.example.aswitch.MyRecyclerViewAdapterModern$1
+ com.example.aswitch.MyRecyclerViewAdapterModern$MyRecyclerViewItemHolder
 com/example/aswitch/BottomFragment.java
  com.example.aswitch.BottomFragment
  com.example.aswitch.BottomFragment$1
@@ -35,10 +43,6 @@ com/example/aswitch/Currency.java
  com.example.aswitch.Currency$1
 com/example/aswitch/ProfileActivity.java
  com.example.aswitch.ProfileActivity
-com/example/aswitch/MyRecyclerViewAdapter.java
- com.example.aswitch.MyRecyclerViewAdapter
- com.example.aswitch.MyRecyclerViewAdapter$1
- com.example.aswitch.MyRecyclerViewAdapter$MyRecyclerViewItemHolder
 com/example/aswitch/MainActivity.java
  com.example.aswitch.MainActivity
  com.example.aswitch.MainActivity$1

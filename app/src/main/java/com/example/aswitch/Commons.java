@@ -22,18 +22,6 @@ public class Commons {
     }
 
 
-    public static java.util.Currency curentSelectedCurr;
-    public static int selectedRecipeIndex=0;
-
-    public static String urlto="http://ctis.bilkent.edu.tr/ctis487/";
-    public static String urlForSpecificImage ="http://ctis.bilkent.edu.tr/ctis487/c202.jpg";
-    public static String urlForjSON = "http://ctis.bilkent.edu.tr/ctis487/recipes.php";
-
-
-
-
-
-
     public static Currency getCurrency() {
         return currency;
     }
